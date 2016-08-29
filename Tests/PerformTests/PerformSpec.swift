@@ -40,6 +40,16 @@ final class PerformSpec: QuickSpec {
 
         expect(detail).to(beAKindOf(Detail.self))
       }
+
+      it("searches for a child view controller of matching view controller type") {
+        var form: Form?
+
+        root?.perform(.showModalForm) {
+          form = $0
+        }
+
+        expect(form).to(beAKindOf(Form.self))
+      }
     }
   }
 }

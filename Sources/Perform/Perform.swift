@@ -5,11 +5,10 @@ import UIKit
 extension UIViewController {
   public func perform<Destination: UIViewController>(segue: Segue<Destination>, configure: (Destination) -> Void) {
     performSegue(withIdentifier: segue.identifier).startWithNext { segue, _ in
-      guard let destination = segue.destinationViewController as? Destination else {
-        fatalError(
-          "expected destination view controller to be of type \(Destination.self), " +
-          "got \(segue.destinationViewController)"
-        )
+      guard let destination = segue.destinationViewController(ofType: Destination.self) else {
+        let printHierarchy = "_printHierarchy"
+        let hierarchy = segue.destinationViewController.performSelector(Selector(printHierarchy)).takeUnretainedValue()
+        fatalError("expected destination view controller hierarchy to include \(Destination.self), got:\n\(hierarchy)")
       }
       configure(destination)
     }
