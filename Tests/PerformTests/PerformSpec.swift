@@ -7,16 +7,21 @@ import Nimble
 extension Segue {
   static var showDetail: Segue { return .init(identifier: "ShowDetail") }
   static var showDetailCast: Segue<Detail> { return .init(identifier: "ShowDetail") }
+  static var showModalForm: Segue<Form> { return .init(identifier: "ShowForm") }
 }
 
 final class PerformSpec: QuickSpec {
   override func spec() {
     describe("perform") {
-      it("passes the destination view controller to the completion block") {
+      var root: UIViewController?
+
+      beforeEach {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let nav = storyboard.instantiateInitialViewController() as? UINavigationController
-        let root = nav?.topViewController
+        root = nav?.topViewController
+      }
 
+      it("passes the destination view controller to the completion block") {
         var detail: UIViewController?
 
         root?.perform(.showDetail) {
@@ -27,10 +32,6 @@ final class PerformSpec: QuickSpec {
       }
 
       it("casts the destination view controller to the specific view controller type") {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let nav = storyboard.instantiateInitialViewController() as? UINavigationController
-        let root = nav?.topViewController
-
         var detail: Detail?
 
         root?.perform(.showDetailCast) {
