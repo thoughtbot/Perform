@@ -1,6 +1,8 @@
 machine:
   xcode:
     version: 8.0
+  environment:
+    NSUnbufferedIO: YES
 
 dependencies:
   override:
