@@ -28,6 +28,10 @@
 		4AC9E4D01D74BAF50064B4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9E4C81D74BAF50064B4E7 /* Assets.xcassets */; };
 		4AC9E4D11D74BAF50064B4E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9E4C91D74BAF50064B4E7 /* LaunchScreen.storyboard */; };
 		4AC9E4D21D74BAF50064B4E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9E4CB1D74BAF50064B4E7 /* Main.storyboard */; };
+		4AC9E4D61D74BBD70064B4E7 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4D51D74BBD70064B4E7 /* Segue.swift */; };
+		4AC9E4DA1D74C04E0064B4E7 /* SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4D91D74C04E0064B4E7 /* SignalProducer.swift */; };
+		4AC9E4DC1D74C0680064B4E7 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4DB1D74C0680064B4E7 /* Signal.swift */; };
+		4AC9E4DE1D74C0DC0064B4E7 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4DD1D74C0DC0064B4E7 /* NSObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +98,10 @@
 		4AC9E4CA1D74BAF50064B4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AC9E4CC1D74BAF50064B4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AC9E4CD1D74BAF50064B4E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AC9E4D51D74BBD70064B4E7 /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		4AC9E4D91D74C04E0064B4E7 /* SignalProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducer.swift; sourceTree = "<group>"; };
+		4AC9E4DB1D74C0680064B4E7 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		4AC9E4DD1D74C0DC0064B4E7 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +198,11 @@
 			isa = PBXGroup;
 			children = (
 				4A9593C61D7493EC00EE27AA /* Perform.h */,
+				4AC9E4DD1D74C0DC0064B4E7 /* NSObject.swift */,
 				4A9593C91D74940600EE27AA /* Perform.swift */,
+				4AC9E4D51D74BBD70064B4E7 /* Segue.swift */,
+				4AC9E4DB1D74C0680064B4E7 /* Signal.swift */,
+				4AC9E4D91D74C04E0064B4E7 /* SignalProducer.swift */,
 				4A9593C51D7493EC00EE27AA /* Info.plist */,
 			);
 			path = Perform;
@@ -377,6 +389,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A95940A1D74B16D00EE27AA /* Perform.swift in Sources */,
+				4AC9E4DC1D74C0680064B4E7 /* Signal.swift in Sources */,
+				4AC9E4DE1D74C0DC0064B4E7 /* NSObject.swift in Sources */,
+				4AC9E4D61D74BBD70064B4E7 /* Segue.swift in Sources */,
+				4AC9E4DA1D74C04E0064B4E7 /* SignalProducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
