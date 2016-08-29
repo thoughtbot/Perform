@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Perform.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4A9593CE1D74A59A00EE27AA"
+               BuildableName = "PerformHarness.app"
+               BlueprintName = "PerformHarness"
+               ReferencedContainer = "container:Perform.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

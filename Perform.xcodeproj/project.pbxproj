@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4A95938B1D748EE100EE27AA /* Perform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593811D748EE100EE27AA /* Perform.framework */; };
-		4A9593B31D7490B700EE27AA /* PerformSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9593B11D7490B700EE27AA /* PerformSpec.swift */; };
 		4A9593BB1D7492CB00EE27AA /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B71D7492CB00EE27AA /* Nimble.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4A9593BC1D7492CB00EE27AA /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B81D7492CB00EE27AA /* Quick.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4A9593BD1D7492CB00EE27AA /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B91D7492CB00EE27AA /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -18,7 +17,17 @@
 		4A9593C21D74932000EE27AA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B71D7492CB00EE27AA /* Nimble.framework */; };
 		4A9593C31D74932000EE27AA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B81D7492CB00EE27AA /* Quick.framework */; };
 		4A9593C81D7493EC00EE27AA /* Perform.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9593C61D7493EC00EE27AA /* Perform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A9593CA1D74940600EE27AA /* Perform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9593C91D74940600EE27AA /* Perform.swift */; };
+		4A9593F81D74A9F500EE27AA /* Perform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593811D748EE100EE27AA /* Perform.framework */; };
+		4A9593F91D74AA0000EE27AA /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B91D7492CB00EE27AA /* ReactiveCocoa.framework */; };
+		4A9593FA1D74AA0200EE27AA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593BA1D7492CB00EE27AA /* Result.framework */; };
+		4A9593FC1D74AA2500EE27AA /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B91D7492CB00EE27AA /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A9593FD1D74AA2600EE27AA /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593BA1D7492CB00EE27AA /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A95940A1D74B16D00EE27AA /* Perform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9593C91D74940600EE27AA /* Perform.swift */; };
+		4A95940C1D74B19800EE27AA /* PerformSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9593B11D7490B700EE27AA /* PerformSpec.swift */; };
+		4AC9E4CF1D74BAF50064B4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4C71D74BAF50064B4E7 /* AppDelegate.swift */; };
+		4AC9E4D01D74BAF50064B4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9E4C81D74BAF50064B4E7 /* Assets.xcassets */; };
+		4AC9E4D11D74BAF50064B4E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9E4C91D74BAF50064B4E7 /* LaunchScreen.storyboard */; };
+		4AC9E4D21D74BAF50064B4E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9E4CB1D74BAF50064B4E7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +37,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4A9593801D748EE100EE27AA;
 			remoteInfo = Perform;
+		};
+		4A9593F21D74A71A00EE27AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A9593781D748EE100EE27AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A9593CE1D74A59A00EE27AA;
+			remoteInfo = PerformHarness;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -46,6 +62,18 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A9593FB1D74AA1700EE27AA /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A9593FC1D74AA2500EE27AA /* ReactiveCocoa.framework in Copy Frameworks */,
+				4A9593FD1D74AA2600EE27AA /* Result.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +88,12 @@
 		4A9593C51D7493EC00EE27AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A9593C61D7493EC00EE27AA /* Perform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perform.h; sourceTree = "<group>"; };
 		4A9593C91D74940600EE27AA /* Perform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perform.swift; sourceTree = "<group>"; };
+		4A9593CF1D74A59A00EE27AA /* PerformHarness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerformHarness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC9E4C71D74BAF50064B4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AC9E4C81D74BAF50064B4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AC9E4CA1D74BAF50064B4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AC9E4CC1D74BAF50064B4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AC9E4CD1D74BAF50064B4E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +116,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A9593CC1D74A59A00EE27AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9593F81D74A9F500EE27AA /* Perform.framework in Frameworks */,
+				4A9593F91D74AA0000EE27AA /* ReactiveCocoa.framework in Frameworks */,
+				4A9593FA1D74AA0200EE27AA /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,6 +144,7 @@
 			children = (
 				4A9593811D748EE100EE27AA /* Perform.framework */,
 				4A95938A1D748EE100EE27AA /* PerformTests.xctest */,
+				4A9593CF1D74A59A00EE27AA /* PerformHarness.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +160,7 @@
 		4A9593A61D7490A000EE27AA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				4AC9E4C61D74BAF50064B4E7 /* Harness */,
 				4A9593AF1D7490B700EE27AA /* PerformTests */,
 			);
 			path = Tests;
@@ -148,6 +194,18 @@
 				4A9593C51D7493EC00EE27AA /* Info.plist */,
 			);
 			path = Perform;
+			sourceTree = "<group>";
+		};
+		4AC9E4C61D74BAF50064B4E7 /* Harness */ = {
+			isa = PBXGroup;
+			children = (
+				4AC9E4C71D74BAF50064B4E7 /* AppDelegate.swift */,
+				4AC9E4C91D74BAF50064B4E7 /* LaunchScreen.storyboard */,
+				4AC9E4CB1D74BAF50064B4E7 /* Main.storyboard */,
+				4AC9E4C81D74BAF50064B4E7 /* Assets.xcassets */,
+				4AC9E4CD1D74BAF50064B4E7 /* Info.plist */,
+			);
+			path = Harness;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,11 +254,30 @@
 			);
 			dependencies = (
 				4A95938D1D748EE100EE27AA /* PBXTargetDependency */,
+				4A9593F31D74A71A00EE27AA /* PBXTargetDependency */,
 			);
 			name = PerformTests;
 			productName = PerformTests;
 			productReference = 4A95938A1D748EE100EE27AA /* PerformTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A9593CE1D74A59A00EE27AA /* PerformHarness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A9593DE1D74A59A00EE27AA /* Build configuration list for PBXNativeTarget "PerformHarness" */;
+			buildPhases = (
+				4A9593CB1D74A59A00EE27AA /* Sources */,
+				4A9593CC1D74A59A00EE27AA /* Frameworks */,
+				4A9593FB1D74AA1700EE27AA /* Copy Frameworks */,
+				4A9593CD1D74A59A00EE27AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerformHarness;
+			productName = PerformHarness;
+			productReference = 4A9593CF1D74A59A00EE27AA /* PerformHarness.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -221,6 +298,11 @@
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						TestTargetID = 4A9593CE1D74A59A00EE27AA;
+					};
+					4A9593CE1D74A59A00EE27AA = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -230,6 +312,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4A9593771D748EE100EE27AA;
 			productRefGroup = 4A9593821D748EE100EE27AA /* Products */;
@@ -238,6 +321,7 @@
 			targets = (
 				4A9593801D748EE100EE27AA /* Perform */,
 				4A9593891D748EE100EE27AA /* PerformTests */,
+				4A9593CE1D74A59A00EE27AA /* PerformHarness */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +338,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9593CD1D74A59A00EE27AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC9E4D21D74BAF50064B4E7 /* Main.storyboard in Resources */,
+				4AC9E4D01D74BAF50064B4E7 /* Assets.xcassets in Resources */,
+				4AC9E4D11D74BAF50064B4E7 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9593CA1D74940600EE27AA /* Perform.swift in Sources */,
+				4A95940A1D74B16D00EE27AA /* Perform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +384,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9593B31D7490B700EE27AA /* PerformSpec.swift in Sources */,
+				4A95940C1D74B19800EE27AA /* PerformSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9593CB1D74A59A00EE27AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC9E4CF1D74BAF50064B4E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +404,31 @@
 			target = 4A9593801D748EE100EE27AA /* Perform */;
 			targetProxy = 4A95938C1D748EE100EE27AA /* PBXContainerItemProxy */;
 		};
+		4A9593F31D74A71A00EE27AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A9593CE1D74A59A00EE27AA /* PerformHarness */;
+			targetProxy = 4A9593F21D74A71A00EE27AA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AC9E4C91D74BAF50064B4E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AC9E4CA1D74BAF50064B4E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4AC9E4CB1D74BAF50064B4E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AC9E4CC1D74BAF50064B4E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4A9593931D748EE100EE27AA /* Debug */ = {
@@ -463,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -471,6 +598,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.PerformTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerformHarness.app/PerformHarness";
 			};
 			name = Debug;
 		};
@@ -478,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -485,6 +614,37 @@
 				INFOPLIST_FILE = Tests/PerformTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.PerformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerformHarness.app/PerformHarness";
+			};
+			name = Release;
+		};
+		4A9593DF1D74A59A00EE27AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/Harness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.PerformHarness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A9593E01D74A59A00EE27AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/Harness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.PerformHarness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -515,6 +675,15 @@
 			buildConfigurations = (
 				4A9593991D748EE100EE27AA /* Debug */,
 				4A95939A1D748EE100EE27AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A9593DE1D74A59A00EE27AA /* Build configuration list for PBXNativeTarget "PerformHarness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A9593DF1D74A59A00EE27AA /* Debug */,
+				4A9593E01D74A59A00EE27AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

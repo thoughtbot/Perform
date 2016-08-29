@@ -1,10 +1,10 @@
-@testable import Perform
+@testable import PerformHarness
 import Quick
 import Nimble
 import ReactiveCocoa
 import Result
 
-final class PerformTests: QuickSpec {
+final class PerformSpec: QuickSpec {
   override func spec() {
     describe("Perform") {
       it("works") {
