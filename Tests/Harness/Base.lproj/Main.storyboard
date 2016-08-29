@@ -31,7 +31,7 @@
         <!--Detail-->
         <scene sceneID="yzw-YX-AYa">
             <objects>
-                <viewController id="YeC-Cu-Mzc" sceneMemberID="viewController">
+                <viewController id="YeC-Cu-Mzc" customClass="Detail" customModule="PerformHarness" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fmL-WC-381"/>
                         <viewControllerLayoutGuide type="bottom" id="3j4-Fv-0gO"/>

@@ -3,9 +3,15 @@ import Result
 import UIKit
 
 extension UIViewController {
-  public func perform(segue: Segue, configure: (UIViewController) -> Void) {
+  public func perform<Destination: UIViewController>(segue: Segue<Destination>, configure: (Destination) -> Void) {
     performSegue(withIdentifier: segue.identifier).startWithNext { segue, _ in
-      configure(segue.destinationViewController)
+      guard let destination = segue.destinationViewController as? Destination else {
+        fatalError(
+          "expected destination view controller to be of type \(Destination.self), " +
+          "got \(segue.destinationViewController)"
+        )
+      }
+      configure(destination)
     }
   }
 
@@ -20,5 +26,17 @@ extension UIViewController {
 
       self.performSegueWithIdentifier(identifier, sender: sender)
     }
+  }
+}
+
+// MARK: - Type checker ambiguity hack
+
+extension UIViewController {
+  @available(*, unavailable)
+  public func perform() {
+    fatalError(
+      "This method will never be called, and exists only to remove an " +
+      "apparent ambiguity resolving the generic method 'perform(_:configure:)'"
+    )
   }
 }
