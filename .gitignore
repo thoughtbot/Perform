@@ -1,2 +1,4 @@
 /Carthage/
 /Cartfile.resolved
+
+xcodebuild-test.log
