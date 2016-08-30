@@ -55,6 +55,11 @@ final class PerformSpec: QuickSpec {
 
         expect(form).to(beAKindOf(Form.self))
       }
+
+      it("has a default prepare block") {
+        root?.perform(.showDetail)
+        expect(root?.navigationController?.topViewController).toEventually(beAKindOf(Detail.self))
+      }
     }
 
     describe("configureViewControllers") {

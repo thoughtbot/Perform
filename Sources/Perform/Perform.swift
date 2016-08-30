@@ -1,7 +1,7 @@
 import UIKit
 
 extension UIViewController {
-  public func perform<Destination: UIViewController>(segue: Segue<Destination>, prepare: (Destination) -> Void) {
+  public func perform<Destination: UIViewController>(segue: Segue<Destination>, prepare: (Destination) -> Void = { _ in }) {
     performSegue(withIdentifier: segue.identifier) { segue, _ in
       guard let destination = segue.destinationViewController(ofType: Destination.self) else {
         let printHierarchy = "_printHierarchy"
