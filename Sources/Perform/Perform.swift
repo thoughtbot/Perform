@@ -1,10 +1,8 @@
-import ReactiveCocoa
-import Result
 import UIKit
 
 extension UIViewController {
   public func perform<Destination: UIViewController>(segue: Segue<Destination>, configure: (Destination) -> Void) {
-    performSegue(withIdentifier: segue.identifier).startWithNext { segue, _ in
+    performSegue(withIdentifier: segue.identifier) { segue, _ in
       guard let destination = segue.destinationViewController(ofType: Destination.self) else {
         let printHierarchy = "_printHierarchy"
         let hierarchy = segue.destinationViewController.performSelector(Selector(printHierarchy)).takeUnretainedValue()
@@ -14,17 +12,17 @@ extension UIViewController {
     }
   }
 
-  @warn_unused_result(message="Did you forget to call 'start' on the producer?")
-  internal func performSegue(withIdentifier identifier: String, sender: AnyObject? = nil) -> SignalProducer<(UIStoryboardSegue, AnyObject?), NoError> {
-    return SignalProducer { observer, disposable in
-      disposable += self.rac_producer(for: #selector(UIViewController.prepareForSegue(_:sender:)))
-        .assumeNoError()
-        .map { ($0.first as! UIStoryboardSegue, $0.second) }
-        .take(1)
-        .start(observer)
+  internal func performSegue(withIdentifier identifier: String, sender: AnyObject? = nil, configure: (UIStoryboardSegue, AnyObject?) -> Void) {
+    try! aspect_hook(
+      #selector(UIViewController.prepareForSegue(_:sender:)),
+      options: [.PositionAfter, .OptionAutomaticRemoval],
+      body: { info in
+        let arguments = info.arguments()
+        configure(arguments.first as! UIStoryboardSegue, arguments.second)
+      }
+    )
 
-      self.performSegueWithIdentifier(identifier, sender: sender)
-    }
+    performSegueWithIdentifier(identifier, sender: sender)
   }
 }
 

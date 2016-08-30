@@ -10,28 +10,22 @@
 		4A95938B1D748EE100EE27AA /* Perform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593811D748EE100EE27AA /* Perform.framework */; };
 		4A9593BB1D7492CB00EE27AA /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B71D7492CB00EE27AA /* Nimble.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4A9593BC1D7492CB00EE27AA /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B81D7492CB00EE27AA /* Quick.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4A9593BD1D7492CB00EE27AA /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B91D7492CB00EE27AA /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4A9593BE1D7492CB00EE27AA /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593BA1D7492CB00EE27AA /* Result.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4A9593C01D74931800EE27AA /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B91D7492CB00EE27AA /* ReactiveCocoa.framework */; };
-		4A9593C11D74931800EE27AA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593BA1D7492CB00EE27AA /* Result.framework */; };
 		4A9593C21D74932000EE27AA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B71D7492CB00EE27AA /* Nimble.framework */; };
 		4A9593C31D74932000EE27AA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B81D7492CB00EE27AA /* Quick.framework */; };
 		4A9593C81D7493EC00EE27AA /* Perform.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9593C61D7493EC00EE27AA /* Perform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A9593F81D74A9F500EE27AA /* Perform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593811D748EE100EE27AA /* Perform.framework */; };
-		4A9593F91D74AA0000EE27AA /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B91D7492CB00EE27AA /* ReactiveCocoa.framework */; };
-		4A9593FA1D74AA0200EE27AA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593BA1D7492CB00EE27AA /* Result.framework */; };
-		4A9593FC1D74AA2500EE27AA /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B91D7492CB00EE27AA /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4A9593FD1D74AA2600EE27AA /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593BA1D7492CB00EE27AA /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A95940A1D74B16D00EE27AA /* Perform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9593C91D74940600EE27AA /* Perform.swift */; };
 		4A95940C1D74B19800EE27AA /* PerformSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9593B11D7490B700EE27AA /* PerformSpec.swift */; };
+		4AA18A491D75D2FE005386FF /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA18A481D75D2FE005386FF /* Aspects.framework */; };
+		4AA18A4A1D75D30A005386FF /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA18A481D75D2FE005386FF /* Aspects.framework */; };
+		4AA18A4B1D75D30F005386FF /* Aspects.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA18A481D75D2FE005386FF /* Aspects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4AA18A4D1D75D738005386FF /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA18A4C1D75D738005386FF /* CollectionType.swift */; };
+		4AA18A4F1D75D75D005386FF /* Aspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA18A4E1D75D75D005386FF /* Aspects.swift */; };
 		4AC9E4CF1D74BAF50064B4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4C71D74BAF50064B4E7 /* AppDelegate.swift */; };
 		4AC9E4D01D74BAF50064B4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9E4C81D74BAF50064B4E7 /* Assets.xcassets */; };
 		4AC9E4D11D74BAF50064B4E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9E4C91D74BAF50064B4E7 /* LaunchScreen.storyboard */; };
 		4AC9E4D21D74BAF50064B4E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9E4CB1D74BAF50064B4E7 /* Main.storyboard */; };
 		4AC9E4D61D74BBD70064B4E7 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4D51D74BBD70064B4E7 /* Segue.swift */; };
-		4AC9E4DA1D74C04E0064B4E7 /* SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4D91D74C04E0064B4E7 /* SignalProducer.swift */; };
-		4AC9E4DC1D74C0680064B4E7 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4DB1D74C0680064B4E7 /* Signal.swift */; };
-		4AC9E4DE1D74C0DC0064B4E7 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4DD1D74C0DC0064B4E7 /* NSObject.swift */; };
 		4AC9E4E11D74C2C40064B4E7 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4DF1D74C2390064B4E7 /* ViewControllers.swift */; };
 		4AC9E4E31D74C9620064B4E7 /* UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4E21D74C9620064B4E7 /* UIStoryboardSegue.swift */; };
 /* End PBXBuildFile section */
@@ -62,8 +56,6 @@
 			files = (
 				4A9593BB1D7492CB00EE27AA /* Nimble.framework in Copy Frameworks */,
 				4A9593BC1D7492CB00EE27AA /* Quick.framework in Copy Frameworks */,
-				4A9593BD1D7492CB00EE27AA /* ReactiveCocoa.framework in Copy Frameworks */,
-				4A9593BE1D7492CB00EE27AA /* Result.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,8 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4A9593FC1D74AA2500EE27AA /* ReactiveCocoa.framework in Copy Frameworks */,
-				4A9593FD1D74AA2600EE27AA /* Result.framework in Copy Frameworks */,
+				4AA18A4B1D75D30F005386FF /* Aspects.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,21 +80,19 @@
 		4A9593B11D7490B700EE27AA /* PerformSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformSpec.swift; sourceTree = "<group>"; };
 		4A9593B71D7492CB00EE27AA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		4A9593B81D7492CB00EE27AA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		4A9593B91D7492CB00EE27AA /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		4A9593BA1D7492CB00EE27AA /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		4A9593C51D7493EC00EE27AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A9593C61D7493EC00EE27AA /* Perform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perform.h; sourceTree = "<group>"; };
 		4A9593C91D74940600EE27AA /* Perform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perform.swift; sourceTree = "<group>"; };
 		4A9593CF1D74A59A00EE27AA /* PerformHarness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerformHarness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA18A481D75D2FE005386FF /* Aspects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aspects.framework; path = Carthage/Build/iOS/Aspects.framework; sourceTree = "<group>"; };
+		4AA18A4C1D75D738005386FF /* CollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
+		4AA18A4E1D75D75D005386FF /* Aspects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aspects.swift; sourceTree = "<group>"; };
 		4AC9E4C71D74BAF50064B4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC9E4C81D74BAF50064B4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC9E4CA1D74BAF50064B4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AC9E4CC1D74BAF50064B4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AC9E4CD1D74BAF50064B4E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AC9E4D51D74BBD70064B4E7 /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
-		4AC9E4D91D74C04E0064B4E7 /* SignalProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducer.swift; sourceTree = "<group>"; };
-		4AC9E4DB1D74C0680064B4E7 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
-		4AC9E4DD1D74C0DC0064B4E7 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		4AC9E4DF1D74C2390064B4E7 /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
 		4AC9E4E21D74C9620064B4E7 /* UIStoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,8 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9593C01D74931800EE27AA /* ReactiveCocoa.framework in Frameworks */,
-				4A9593C11D74931800EE27AA /* Result.framework in Frameworks */,
+				4AA18A491D75D2FE005386FF /* Aspects.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9593F81D74A9F500EE27AA /* Perform.framework in Frameworks */,
-				4A9593F91D74AA0000EE27AA /* ReactiveCocoa.framework in Frameworks */,
-				4A9593FA1D74AA0200EE27AA /* Result.framework in Frameworks */,
+				4AA18A4A1D75D30A005386FF /* Aspects.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,10 +177,9 @@
 		4A9593BF1D7492D400EE27AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4AA18A481D75D2FE005386FF /* Aspects.framework */,
 				4A9593B71D7492CB00EE27AA /* Nimble.framework */,
 				4A9593B81D7492CB00EE27AA /* Quick.framework */,
-				4A9593B91D7492CB00EE27AA /* ReactiveCocoa.framework */,
-				4A9593BA1D7492CB00EE27AA /* Result.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,11 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				4A9593C61D7493EC00EE27AA /* Perform.h */,
-				4AC9E4DD1D74C0DC0064B4E7 /* NSObject.swift */,
+				4AA18A4E1D75D75D005386FF /* Aspects.swift */,
+				4AA18A4C1D75D738005386FF /* CollectionType.swift */,
 				4A9593C91D74940600EE27AA /* Perform.swift */,
 				4AC9E4D51D74BBD70064B4E7 /* Segue.swift */,
-				4AC9E4DB1D74C0680064B4E7 /* Signal.swift */,
-				4AC9E4D91D74C04E0064B4E7 /* SignalProducer.swift */,
 				4AC9E4E21D74C9620064B4E7 /* UIStoryboardSegue.swift */,
 				4A9593C51D7493EC00EE27AA /* Info.plist */,
 			);
@@ -394,12 +379,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA18A4F1D75D75D005386FF /* Aspects.swift in Sources */,
 				4AC9E4E31D74C9620064B4E7 /* UIStoryboardSegue.swift in Sources */,
+				4AA18A4D1D75D738005386FF /* CollectionType.swift in Sources */,
 				4A95940A1D74B16D00EE27AA /* Perform.swift in Sources */,
-				4AC9E4DC1D74C0680064B4E7 /* Signal.swift in Sources */,
-				4AC9E4DE1D74C0DC0064B4E7 /* NSObject.swift in Sources */,
 				4AC9E4D61D74BBD70064B4E7 /* Segue.swift in Sources */,
-				4AC9E4DA1D74C04E0064B4E7 /* SignalProducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
