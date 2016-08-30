@@ -229,7 +229,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A9593951D748EE100EE27AA /* Build configuration list for PBXNativeTarget "Perform" */;
 			buildPhases = (
-				4A9593B51D74915900EE27AA /* Check Carthage Dependencies */,
 				4A95937C1D748EE100EE27AA /* Sources */,
 				4A95937D1D748EE100EE27AA /* Frameworks */,
 				4A95937E1D748EE100EE27AA /* Headers */,
@@ -355,24 +354,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4A9593B51D74915900EE27AA /* Check Carthage Dependencies */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Carthage Dependencies";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ -n \"$CARTHAGE\" ]; then\n  exit 0\nfi\n\nif ! cmp -s Cartfile.resolved Carthage/Cartfile.resolved; then\n  echo >&2 \"error: Your dependencies are out of date. Run bin/bootstrap to update.\"\n  exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A95937C1D748EE100EE27AA /* Sources */ = {
