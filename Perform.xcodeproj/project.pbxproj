@@ -369,7 +369,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if ! cmp -s Cartfile.resolved Carthage/Cartfile.resolved; then\n  echo >&2 \"error: Your dependencies are out of date. Run bin/bootstrap to update.\"\n  exit 1\nfi\n";
+			shellScript = "if [ -n \"$CARTHAGE\" ]; then\n  exit 0\nfi\n\nif ! cmp -s Cartfile.resolved Carthage/Cartfile.resolved; then\n  echo >&2 \"error: Your dependencies are out of date. Run bin/bootstrap to update.\"\n  exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
