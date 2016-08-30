@@ -57,7 +57,7 @@ final class PerformSpec: QuickSpec {
       }
     }
 
-    describe("configureTabs") {
+    describe("configureViewControllers") {
       var controller: UITabBarController?
 
       beforeEach {
@@ -71,8 +71,8 @@ final class PerformSpec: QuickSpec {
       it("configures each tab in turn") {
         var configured: [String] = []
 
-        controller?.configureTabs { child in
-          switch child {
+        controller?.configureViewControllers { viewController in
+          switch viewController {
           case is Feed:
             configured.append("Feed")
 
