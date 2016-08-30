@@ -28,6 +28,8 @@
 		4AC9E4D61D74BBD70064B4E7 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4D51D74BBD70064B4E7 /* Segue.swift */; };
 		4AC9E4E11D74C2C40064B4E7 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4DF1D74C2390064B4E7 /* ViewControllers.swift */; };
 		4AC9E4E31D74C9620064B4E7 /* UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4E21D74C9620064B4E7 /* UIStoryboardSegue.swift */; };
+		4AEFD48A1D760122004E7F66 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFD4891D760122004E7F66 /* UITabBarController.swift */; };
+		4AEFD48C1D7601A4004E7F66 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFD48B1D7601A4004E7F66 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		4AC9E4D51D74BBD70064B4E7 /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		4AC9E4DF1D74C2390064B4E7 /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
 		4AC9E4E21D74C9620064B4E7 /* UIStoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardSegue.swift; sourceTree = "<group>"; };
+		4AEFD4891D760122004E7F66 /* UITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
+		4AEFD48B1D7601A4004E7F66 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,8 @@
 				4A9593C91D74940600EE27AA /* Perform.swift */,
 				4AC9E4D51D74BBD70064B4E7 /* Segue.swift */,
 				4AC9E4E21D74C9620064B4E7 /* UIStoryboardSegue.swift */,
+				4AEFD4891D760122004E7F66 /* UITabBarController.swift */,
+				4AEFD48B1D7601A4004E7F66 /* UIViewController.swift */,
 				4A9593C51D7493EC00EE27AA /* Info.plist */,
 			);
 			path = Perform;
@@ -361,9 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA18A4F1D75D75D005386FF /* Aspects.swift in Sources */,
+				4AEFD48A1D760122004E7F66 /* UITabBarController.swift in Sources */,
 				4AC9E4E31D74C9620064B4E7 /* UIStoryboardSegue.swift in Sources */,
 				4AA18A4D1D75D738005386FF /* CollectionType.swift in Sources */,
 				4A95940A1D74B16D00EE27AA /* Perform.swift in Sources */,
+				4AEFD48C1D7601A4004E7F66 /* UIViewController.swift in Sources */,
 				4AC9E4D61D74BBD70064B4E7 /* Segue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

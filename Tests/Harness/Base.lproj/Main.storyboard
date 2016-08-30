@@ -74,6 +74,62 @@
             </objects>
             <point key="canvasLocation" x="916" y="110"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="8hS-Od-JCZ">
+            <objects>
+                <viewController id="8Xc-O0-Oka" customClass="Profile" customModule="PerformHarness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pGK-SH-ZjP"/>
+                        <viewControllerLayoutGuide type="bottom" id="p11-1c-kec"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3i1-Zx-IHR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="Z0a-yC-eNT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7k-Zh-jJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="1647"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="9kt-OZ-oWO">
+            <objects>
+                <viewController id="IE1-mc-wV3" customClass="Feed" customModule="PerformHarness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mIa-P5-VNh"/>
+                        <viewControllerLayoutGuide type="bottom" id="TTV-Ya-d1c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ESb-Kc-6Qx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Feed" id="Htr-kq-02q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAe-9R-lUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="992"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5cN-Wg-QbL">
+            <objects>
+                <tabBarController storyboardIdentifier="Tabs" id="XVG-FP-JwE" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OGP-m2-hGn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IE1-mc-wV3" kind="relationship" relationship="viewControllers" id="hvS-65-Xd0"/>
+                        <segue destination="8Xc-O0-Oka" kind="relationship" relationship="viewControllers" id="6aV-Lr-o11"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UY2-zR-skX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="1318"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3qI-wk-cbL">
             <objects>

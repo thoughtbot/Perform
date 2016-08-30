@@ -12,13 +12,18 @@ extension Segue {
 
 final class PerformSpec: QuickSpec {
   override func spec() {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
     describe("perform") {
       var root: UIViewController?
 
       beforeEach {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let nav = storyboard.instantiateInitialViewController() as? UINavigationController
         root = nav?.topViewController
+      }
+
+      afterEach {
+        root = nil
       }
 
       it("passes the destination view controller to the completion block") {
@@ -49,6 +54,37 @@ final class PerformSpec: QuickSpec {
         }
 
         expect(form).to(beAKindOf(Form.self))
+      }
+    }
+
+    describe("configureTabs") {
+      var controller: UITabBarController?
+
+      beforeEach {
+        controller = storyboard.instantiateViewControllerWithIdentifier("Tabs") as? UITabBarController
+      }
+
+      afterEach {
+        controller = nil
+      }
+
+      it("configures each tab in turn") {
+        var configured: [String] = []
+
+        controller?.configureTabs { child in
+          switch child {
+          case is Feed:
+            configured.append("Feed")
+
+          case is Profile:
+            configured.append("Profile")
+
+          default:
+            break
+          }
+        }
+
+        expect(configured).to(equal(["Feed", "Profile"]))
       }
     }
   }
