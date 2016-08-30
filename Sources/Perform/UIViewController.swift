@@ -1,6 +1,14 @@
 import UIKit
 
 extension UIViewController {
+  /// Perform a breadth-first search of the receiver's view controller hierarchy,
+  /// returning the first view controller matching the given `type`, or nil.
+  ///
+  /// - parameter type:
+  ///     The type of the view controller to search for.
+  ///
+  /// - returns:
+  ///     The first view controller matching the given `type`, or nil.
   public func childViewController<Child: UIViewController>(ofType type: Child.Type) -> Child? {
     return hierarchy.first { $0 as? Child }
   }
