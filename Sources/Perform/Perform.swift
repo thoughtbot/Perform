@@ -36,14 +36,14 @@ extension UIViewController {
   ///     and crash. This usually means that the view controller hasn't
   ///     been configured with the correct type in the storyboard.
   public func perform<Destination: UIViewController>(segue: Segue<Destination>, prepare: (Destination) -> Void = { _ in }) {
-    performSegue(withIdentifier: segue.identifier) { segue, _ in
+    performSegue(withIdentifier: segue.identifier) { [segueDescription = { String(reflecting: segue) }] segue, _ in
       guard let destination = segue.destinationViewController(ofType: Destination.self) else {
         #if DEBUG
           let printHierarchy = "_printHierarchy"
           let hierarchy = segue.destinationViewController.performSelector(Selector(printHierarchy)).takeUnretainedValue()
-          fatalError("expected destination view controller hierarchy to include \(Destination.self), got:\n\(hierarchy)")
+          fatalError("\(segueDescription()): expected destination view controller hierarchy to include \(Destination.self), got:\n\(hierarchy)")
         #else
-          fatalError("expected destination view controller hierarchy to include \(Destination.self)")
+          fatalError("\(segueDescription()): expected destination view controller hierarchy to include \(Destination.self)")
         #endif
       }
       prepare(destination)
