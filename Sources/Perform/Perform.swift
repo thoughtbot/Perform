@@ -38,9 +38,13 @@ extension UIViewController {
   public func perform<Destination: UIViewController>(segue: Segue<Destination>, prepare: (Destination) -> Void = { _ in }) {
     performSegue(withIdentifier: segue.identifier) { segue, _ in
       guard let destination = segue.destinationViewController(ofType: Destination.self) else {
-        let printHierarchy = "_printHierarchy"
-        let hierarchy = segue.destinationViewController.performSelector(Selector(printHierarchy)).takeUnretainedValue()
-        fatalError("expected destination view controller hierarchy to include \(Destination.self), got:\n\(hierarchy)")
+        #if DEBUG
+          let printHierarchy = "_printHierarchy"
+          let hierarchy = segue.destinationViewController.performSelector(Selector(printHierarchy)).takeUnretainedValue()
+          fatalError("expected destination view controller hierarchy to include \(Destination.self), got:\n\(hierarchy)")
+        #else
+          fatalError("expected destination view controller hierarchy to include \(Destination.self)")
+        #endif
       }
       prepare(destination)
     }
