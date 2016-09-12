@@ -6,6 +6,8 @@ machine:
 
 dependencies:
   override:
+    - gem install cocoapods
+    - pod install
     - bin/bootstrap-if-needed
   cache_directories:
     - "Carthage"
