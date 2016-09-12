@@ -9,3 +9,7 @@ dependencies:
     - bin/bootstrap-if-needed
   cache_directories:
     - "Carthage"
+
+test:
+  post:
+    - pod lib lint
