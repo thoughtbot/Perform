@@ -26,6 +26,7 @@ build/
 
 # Cocoapods
 Pods
+Podfile.lock
 
 # Carthage
 /Carthage/
