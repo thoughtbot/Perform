@@ -77,6 +77,20 @@ installation instructions.
   [carthage-home]: https://github.com/Carthage/Carthage
   [carthage-readme]: https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
 
+### [CocoaPods][cocoapods]
+
+Add the following to your Podfile:
+
+```
+pod "Perform", "~> 1.0"
+```
+
+See the [CocoaPods guide][cocoapods-usage] for up-to-date installation
+instructions.
+
+  [cocoapods]: https://cocoapods.org
+  [cocoapods-usage]: https://guides.cocoapods.org/using/using-cocoapods.html
+
 ## Contributing
 
 See the [CONTRIBUTING][] document.
