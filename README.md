@@ -66,7 +66,7 @@ switch statements.
 Add the following to your Cartfile:
 
 ```
-github "thoughtbot/Perform"
+github "thoughtbot/Perform" ~> 1.0
 ```
 
 Then run `carthage update Perform`.
