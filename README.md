@@ -59,6 +59,13 @@ Multiple segues from one view controller? No problem, just prepare each
 destination view controller right where you perform the segue. No more massive
 switch statements.
 
+#### Further reading
+
+For more examples, and a discussion about the motivation and design of Perform,
+take a look at the [introductory blog post][perform-blog].
+
+  [perform-blog]: https://robots.thoughtbot.com/introducing-perform-easy-dependency-injection-for-storyboard-segues
+
 ## Installation
 
 ### [Carthage][carthage-home]
