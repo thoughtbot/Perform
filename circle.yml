@@ -5,13 +5,8 @@ machine:
     NSUnbufferedIO: YES
 
 dependencies:
-  override:
-    - gem install cocoapods
-    - pod install
+  pre:
     - bin/bootstrap-if-needed
-  cache_directories:
-    - "Carthage"
-    - "~/.cocoapods/repos"
 
 test:
   post:
