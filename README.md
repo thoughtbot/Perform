@@ -68,12 +68,19 @@ take a look at the [introductory blog post][perform-blog].
 
 ## Installation
 
+### Compatibility
+
+| Swift Version | Perform Version |
+| ------------- | --------------- |
+| 3.x           | 2.x             |
+| 2.x           | 1.x             |
+
 ### [Carthage][carthage-home]
 
 Add the following to your Cartfile:
 
 ```
-github "thoughtbot/Perform" ~> 1.0
+github "thoughtbot/Perform" ~> 2.0
 ```
 
 Then run `carthage update Perform`.
@@ -89,7 +96,7 @@ installation instructions.
 Add the following to your Podfile:
 
 ```
-pod "Perform", "~> 1.0"
+pod "Perform", "~> 2.0"
 ```
 
 See the [CocoaPods guide][cocoapods-usage] for up-to-date installation
