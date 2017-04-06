@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4A95938B1D748EE100EE27AA /* Perform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593811D748EE100EE27AA /* Perform.framework */; };
-		4A9593BB1D7492CB00EE27AA /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B71D7492CB00EE27AA /* Nimble.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4A9593BC1D7492CB00EE27AA /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B81D7492CB00EE27AA /* Quick.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4A9593BB1D7492CB00EE27AA /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B71D7492CB00EE27AA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A9593BC1D7492CB00EE27AA /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B81D7492CB00EE27AA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A9593C21D74932000EE27AA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B71D7492CB00EE27AA /* Nimble.framework */; };
 		4A9593C31D74932000EE27AA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9593B81D7492CB00EE27AA /* Quick.framework */; };
 		4A9593C81D7493EC00EE27AA /* Perform.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9593C61D7493EC00EE27AA /* Perform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -297,7 +297,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = thoughtbot;
 				TargetAttributes = {
 					4A9593801D748EE100EE27AA = {
@@ -451,6 +451,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -507,6 +508,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
