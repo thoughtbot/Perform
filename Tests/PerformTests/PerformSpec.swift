@@ -66,7 +66,7 @@ final class PerformSpec: QuickSpec {
       var controller: UITabBarController?
 
       beforeEach {
-        controller = storyboard.instantiateViewControllerWithIdentifier("Tabs") as? UITabBarController
+        controller = storyboard.instantiateViewController(withIdentifier: "Tabs") as? UITabBarController
       }
 
       afterEach {

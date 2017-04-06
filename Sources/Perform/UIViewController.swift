@@ -14,12 +14,12 @@ extension UIViewController {
   }
 
   var hierarchy: AnySequence<UIViewController> {
-    return AnySequence { () -> AnyGenerator<UIViewController> in
+    return AnySequence { () -> AnyIterator<UIViewController> in
       var queue = [self]
 
-      return AnyGenerator {
+      return AnyIterator {
         if let next = queue.popLast() {
-          queue.insertContentsOf(next.childViewControllers, at: 0)
+          queue.insert(contentsOf: next.childViewControllers, at: 0)
           return next
         } else {
           return nil

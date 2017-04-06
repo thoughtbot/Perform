@@ -35,32 +35,33 @@ extension UIViewController {
   ///     view controller hierarchy, this method will raise a fatal error
   ///     and crash. This usually means that the view controller hasn't
   ///     been configured with the correct type in the storyboard.
-  public func perform<Destination: UIViewController>(segue: Segue<Destination>, prepare: (Destination) -> Void = { _ in }) {
+  public func perform<Destination: UIViewController>(_ segue: Segue<Destination>, prepare: @escaping (Destination) -> Void = { _ in }) {
     performSegue(withIdentifier: segue.identifier) { [segueDescription = { String(reflecting: segue) }] segue, _ in
       guard let destination = segue.destinationViewController(ofType: Destination.self) else {
         #if DEBUG
           let printHierarchy = "_printHierarchy"
-          let hierarchy = segue.destinationViewController.performSelector(Selector(printHierarchy)).takeUnretainedValue()
+          let hierarchy = segue.destination.perform(Selector(printHierarchy)).takeUnretainedValue()
           fatalError("\(segueDescription()): expected destination view controller hierarchy to include \(Destination.self), got:\n\(hierarchy)")
         #else
           fatalError("\(segueDescription()): expected destination view controller hierarchy to include \(Destination.self)")
         #endif
       }
+
       prepare(destination)
     }
   }
 
-  internal func performSegue(withIdentifier identifier: String, sender: AnyObject? = nil, prepare: (UIStoryboardSegue, AnyObject?) -> Void) {
-    try! aspect_hook(
-      #selector(UIViewController.prepareForSegue(_:sender:)),
-      options: [.PositionAfter, .OptionAutomaticRemoval],
+  internal func performSegue(withIdentifier identifier: String, sender: Any? = nil, prepare: @escaping (UIStoryboardSegue, Any?) -> Void) {
+    _ = try! aspect_hook(
+      #selector(UIViewController.prepare(for:sender:)),
+      options: .optionAutomaticRemoval,
       body: { info in
-        let arguments = info.arguments()
+        let arguments = info.arguments()!
         prepare(arguments.first as! UIStoryboardSegue, arguments.second)
       }
     )
 
-    performSegueWithIdentifier(identifier, sender: sender)
+    performSegue(withIdentifier: identifier, sender: sender)
   }
 }
 

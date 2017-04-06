@@ -23,7 +23,7 @@ extension UITabBarController {
   /// - parameter configure:
   ///     A function that will be invoked once with each view controller
   ///     in each tab's view controller hierarchy.
-  public func configureViewControllers(@noescape configure: (UIViewController) -> Void) {
+  public func configureViewControllers(_ configure: (UIViewController) -> Void) {
     let hierarchy = (viewControllers ?? []).lazy.flatMap { $0.hierarchy }
     hierarchy.forEach(configure)
   }

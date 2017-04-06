@@ -19,7 +19,7 @@
 		4AA18A491D75D2FE005386FF /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA18A481D75D2FE005386FF /* Aspects.framework */; };
 		4AA18A4A1D75D30A005386FF /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA18A481D75D2FE005386FF /* Aspects.framework */; };
 		4AA18A4B1D75D30F005386FF /* Aspects.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA18A481D75D2FE005386FF /* Aspects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4AA18A4D1D75D738005386FF /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA18A4C1D75D738005386FF /* CollectionType.swift */; };
+		4AA18A4D1D75D738005386FF /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA18A4C1D75D738005386FF /* Collection.swift */; };
 		4AA18A4F1D75D75D005386FF /* Aspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA18A4E1D75D75D005386FF /* Aspects.swift */; };
 		4AC9E4CF1D74BAF50064B4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9E4C71D74BAF50064B4E7 /* AppDelegate.swift */; };
 		4AC9E4D01D74BAF50064B4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9E4C81D74BAF50064B4E7 /* Assets.xcassets */; };
@@ -88,7 +88,7 @@
 		4A9593C91D74940600EE27AA /* Perform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perform.swift; sourceTree = "<group>"; };
 		4A9593CF1D74A59A00EE27AA /* PerformHarness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerformHarness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA18A481D75D2FE005386FF /* Aspects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aspects.framework; path = Carthage/Build/iOS/Aspects.framework; sourceTree = "<group>"; };
-		4AA18A4C1D75D738005386FF /* CollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
+		4AA18A4C1D75D738005386FF /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		4AA18A4E1D75D75D005386FF /* Aspects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aspects.swift; sourceTree = "<group>"; };
 		4AC9E4C71D74BAF50064B4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC9E4C81D74BAF50064B4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 			children = (
 				4A9593C61D7493EC00EE27AA /* Perform.h */,
 				4AA18A4E1D75D75D005386FF /* Aspects.swift */,
-				4AA18A4C1D75D738005386FF /* CollectionType.swift */,
+				4AA18A4C1D75D738005386FF /* Collection.swift */,
 				4A9593C91D74940600EE27AA /* Perform.swift */,
 				4AC9E4D51D74BBD70064B4E7 /* Segue.swift */,
 				4AEFD48F1D76089F004E7F66 /* SequenceType.swift */,
@@ -302,17 +302,18 @@
 				TargetAttributes = {
 					4A9593801D748EE100EE27AA = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					4A9593891D748EE100EE27AA = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4A9593CE1D74A59A00EE27AA;
 					};
 					4A9593CE1D74A59A00EE27AA = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -373,7 +374,7 @@
 				4AA18A4F1D75D75D005386FF /* Aspects.swift in Sources */,
 				4AEFD48A1D760122004E7F66 /* UITabBarController.swift in Sources */,
 				4AC9E4E31D74C9620064B4E7 /* UIStoryboardSegue.swift in Sources */,
-				4AA18A4D1D75D738005386FF /* CollectionType.swift in Sources */,
+				4AA18A4D1D75D738005386FF /* Collection.swift in Sources */,
 				4A95940A1D74B16D00EE27AA /* Perform.swift in Sources */,
 				4AEFD48C1D7601A4004E7F66 /* UIViewController.swift in Sources */,
 				4AC9E4D61D74BBD70064B4E7 /* Segue.swift in Sources */,
@@ -481,7 +482,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -529,7 +530,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
