@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "Perform"
-  s.version = "1.0.0"
+  s.version = %x(git describe --tags --abbrev=0).chomp
   s.summary = "Easy dependency injection for storyboard segues."
 
   s.homepage = "https://github.com/thoughtbot/Perform"
