@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
 
   s.source_files = "Sources/Perform/**/*.swift"
 
-  s.dependency "Aspects", "~> 1.4.1"
+  s.dependency "Aspects", "~> 1.4"
 end
