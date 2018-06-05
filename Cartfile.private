@@ -1,2 +1,2 @@
-github "Quick/Quick" ~> 1.1
-github "Quick/Nimble" ~> 6.1
+github "Quick/Quick" "xcode-9-fix"
+github "ikesyo/Nimble" "master"

@@ -24,7 +24,7 @@ extension UITabBarController {
   ///     A function that will be invoked once with each view controller
   ///     in each tab's view controller hierarchy.
   public func configureViewControllers(_ configure: (UIViewController) -> Void) {
-    let hierarchy = (viewControllers ?? []).lazy.flatMap { $0.hierarchy }
+    let hierarchy: [UIViewController] = (viewControllers ?? []).lazy.flatMap { $0.hierarchy }
     hierarchy.forEach(configure)
   }
 }
