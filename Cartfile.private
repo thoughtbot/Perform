@@ -1,2 +1,2 @@
 github "Quick/Quick" "xcode-9-fix"
-github "ikesyo/Nimble" "build-with-swift4"
+github "ikesyo/Nimble" "master"

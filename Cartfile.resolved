@@ -1,3 +1,3 @@
-github "steipete/Aspects" "1.4.2"
-github "ikesyo/Nimble" "b137c2ba306f9178e7c70bec077d6c94a354baf3"
 github "Quick/Quick" "a3850d0ddc18cf1e6ef17b3078c660f46888deca"
+github "ikesyo/Nimble" "38c9ab0846a3fbec308eb2aa9ef68b10a7434eb4"
+github "steipete/Aspects" "1.4.2"
