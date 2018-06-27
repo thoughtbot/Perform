@@ -35,7 +35,7 @@ extension UIViewController {
   ///     view controller hierarchy, this method will raise a fatal error
   ///     and crash. This usually means that the view controller hasn't
   ///     been configured with the correct type in the storyboard.
-  public func perform<Destination: UIViewController>(_ segue: Segue<Destination>, prepare: @escaping (Destination) -> Void = { _ in }) {
+  public func perform<Destination>(_ segue: Segue<Destination>, prepare: @escaping (Destination) -> Void = { _ in }) {
     performSegue(withIdentifier: segue.identifier) { [segueDescription = { String(reflecting: segue) }] segue, _ in
       guard let destination = segue.destinationViewController(ofType: Destination.self) else {
         #if DEBUG
