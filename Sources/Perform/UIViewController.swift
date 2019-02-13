@@ -19,7 +19,7 @@ extension UIViewController {
 
       return AnyIterator {
         if let next = queue.popLast() {
-          queue.insert(contentsOf: next.childViewControllers, at: 0)
+          queue.insert(contentsOf: next.children, at: 0)
           return next
         } else {
           return nil
