@@ -1,5 +1,4 @@
 import UIKit
-import Foundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,9 +12,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return false
   }
 }
-
-#if !swift(>=4.2)
-extension UIApplication {
-  typealias LaunchOptionsKey = UIApplicationLaunchOptionsKey
-}
-#endif

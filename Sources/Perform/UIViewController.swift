@@ -28,11 +28,3 @@ extension UIViewController {
     }
   }
 }
-
-#if !swift(>=4.2)
-extension UIViewController {
-  var children: [UIViewController] {
-    return childViewControllers
-  }
-}
-#endif
