@@ -1,0 +1,69 @@
+version: 2
+
+jobs:
+  build-and-test:
+    environment: 
+      CARTHAGE_LOG_PATH: log/carthage-build.log
+
+    macos:
+      xcode: "10.1.0"
+    environment:
+      NSUnbufferedIO: YES
+
+    steps:
+      - checkout
+      - run: mkdir log
+      - run:
+          name: Save Xcode version
+          command: |
+            xcodebuild -version | tee .circle-xcode-version
+      - run: 
+          name: Save Carthage cache version
+          command: |
+            echo "$CARTHAGE_CACHE_VERSION" | tee .circle-carthage-cache-version
+
+      - restore_cache:
+          keys:
+            - carthage-{{ checksum ".circle-carthage-cache-version" }}-{{ checksum ".circle-xcode-version" }}-{{ checksum "Cartfile.resolved" }}
+            - carthage-{{ checksum ".circle-carthage-cache-version" }}-{{ checksum ".circle-xcode-version" }}
+            - carthage-{{ checksum ".circle-carthage-cache-version" }}-
+
+      - run:
+          name: Install dependencies
+          command: |
+            bin/bootstrap-if-needed
+
+      - save_cache:
+          key: carthage-{{ checksum ".circle-carthage-cache-version" }}-{{ checksum ".circle-xcode-version" }}-{{ checksum "Cartfile.resolved" }}
+          paths:
+            - "~/Library/Caches/org.carthage.CarthageKit"
+            - "Carthage"
+
+      - run:
+          name: Run tests
+          command: |
+            bin/test
+      - store_artifacts:
+          path: log
+
+  lint-podspec:
+    macos:
+      xcode: "10.1.0"
+
+    steps:
+      - checkout
+      - run:
+          name: Fetch CocoaPods Specs
+          command: |
+            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh \
+              | bash -s cf
+      - run:
+          name: Lint Podspec
+          command: |
+            pod lib lint --allow-warnings
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build-and-test
+      - lint-podspec
