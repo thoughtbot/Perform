@@ -31,6 +31,8 @@
 		4AEFD48A1D760122004E7F66 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFD4891D760122004E7F66 /* UITabBarController.swift */; };
 		4AEFD48C1D7601A4004E7F66 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFD48B1D7601A4004E7F66 /* UIViewController.swift */; };
 		4AEFD4901D76089F004E7F66 /* SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFD48F1D76089F004E7F66 /* SequenceType.swift */; };
+		CD48AEBF2231C1090025D960 /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD48AEBE2231C1090025D960 /* Compatibility.swift */; };
+		CD48AEC02231C17B0025D960 /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD48AEBE2231C1090025D960 /* Compatibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,7 @@
 		4AEFD4891D760122004E7F66 /* UITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		4AEFD48B1D7601A4004E7F66 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		4AEFD48F1D76089F004E7F66 /* SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceType.swift; sourceTree = "<group>"; };
+		CD48AEBE2231C1090025D960 /* Compatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compatibility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,16 +196,17 @@
 		4A9593C41D7493EC00EE27AA /* Perform */ = {
 			isa = PBXGroup;
 			children = (
-				4A9593C61D7493EC00EE27AA /* Perform.h */,
 				4AA18A4E1D75D75D005386FF /* Aspects.swift */,
 				4AA18A4C1D75D738005386FF /* Collection.swift */,
+				CD48AEBE2231C1090025D960 /* Compatibility.swift */,
+				4A9593C51D7493EC00EE27AA /* Info.plist */,
+				4A9593C61D7493EC00EE27AA /* Perform.h */,
 				4A9593C91D74940600EE27AA /* Perform.swift */,
 				4AC9E4D51D74BBD70064B4E7 /* Segue.swift */,
 				4AEFD48F1D76089F004E7F66 /* SequenceType.swift */,
 				4AC9E4E21D74C9620064B4E7 /* UIStoryboardSegue.swift */,
 				4AEFD4891D760122004E7F66 /* UITabBarController.swift */,
 				4AEFD48B1D7601A4004E7F66 /* UIViewController.swift */,
-				4A9593C51D7493EC00EE27AA /* Info.plist */,
 			);
 			path = Perform;
 			sourceTree = "<group>";
@@ -378,6 +382,7 @@
 				4A95940A1D74B16D00EE27AA /* Perform.swift in Sources */,
 				4AEFD48C1D7601A4004E7F66 /* UIViewController.swift in Sources */,
 				4AC9E4D61D74BBD70064B4E7 /* Segue.swift in Sources */,
+				CD48AEBF2231C1090025D960 /* Compatibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +400,7 @@
 			files = (
 				4AC9E4E11D74C2C40064B4E7 /* ViewControllers.swift in Sources */,
 				4AC9E4CF1D74BAF50064B4E7 /* AppDelegate.swift in Sources */,
+				CD48AEC02231C17B0025D960 /* Compatibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +497,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -548,7 +554,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -577,7 +583,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -601,7 +607,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.Perform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -618,7 +624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.PerformTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerformHarness.app/PerformHarness";
 			};
 			name = Debug;
@@ -636,7 +642,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.PerformTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerformHarness.app/PerformHarness";
 			};
 			name = Release;
@@ -653,7 +659,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.PerformHarness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -669,7 +675,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.PerformHarness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
